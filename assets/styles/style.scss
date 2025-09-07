@@ -8,11 +8,9 @@ $color2:black;
 button{
         cursor: pointer;   
     }
-
 a{
     text-decoration: none;
 }
-    
 li{
     cursor: pointer;
 }
@@ -22,6 +20,7 @@ html{
 body{
     margin: 0 100px;
 }
+// header
 header{
     .header-top{
         .header-1{
@@ -58,16 +57,17 @@ header{
         flex-direction: row;
         justify-content: space-between;
         .header-botton-1{
+            display: flex;
+            gap: 5px;
             button{
                 padding: 10px;
-                margin: 0 5px;
                 background: none;
+                border: none;
                 color: $color1;
                 font-size: 1rem;
                 transition: 0.2s;
             }
             button:hover{
-                   transform: scale(1.1);
                     background: $color1;
                     color: $color2 ;
             }
@@ -91,6 +91,40 @@ header{
                         }
                     }
                 }
+            }
+        }
+    }
+}
+// main
+main{
+    background: $color1;
+    .main-top{
+        .main-top1{
+            text-align: center;
+            padding: 10px 50px;
+            .main-top1l1{
+                position: relative;
+                display: inline-block;
+                &::before, &::after{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 300px;
+                    height: 0.1px;
+                    background: black;
+                }
+                &::before{
+                    left: -310px;
+                }
+                &::after{
+                    right: -310px;
+                }
+            }
+            h2{
+                font-size: 3rem;
+                text-transform:uppercase;
+                padding: 20px;
             }
         }
     }
