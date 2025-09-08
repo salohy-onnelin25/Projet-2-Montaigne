@@ -163,16 +163,28 @@ main .main-ventre .main-ventre2 button a {
   font-size: 1.2rem;
 }
 main .main-pied {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+main .main-pied .main-pied1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-main .main-pied .main-pied1 {
-  border: 0.5px solid black;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 0.5px solid rgb(126, 121, 121);
+  padding-bottom: 20px;
 }
 main .main-pied .main-pied1 .main-pied11 {
   text-align: center;
@@ -184,21 +196,36 @@ main .main-pied .main-pied1 .main-pied12 {
   background: url(../img/pic02.jpg);
 }
 main .main-pied .main-pied1 .main-pied13 {
-  padding: 10px 40px;
+  padding: 10px 45px;
 }
 main .main-pied .main-pied1 .main-pied13 p {
   font-size: 1.2rem;
 }
 main .main-pied .main-pied1 .main-pied14 {
+  margin-top: auto;
   text-align: center;
 }
 main .main-pied .main-pied1 .main-pied14 button {
-  margin: 40px;
+  margin: 0;
   padding: 10px 20px;
   background: none;
 }
 main .main-pied .main-pied2 {
-  border: 0.5px solid black;
+  padding-bottom: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 0.5px solid rgb(126, 121, 121);
 }
 main .main-pied .main-pied2 .main-pied21 {
   text-align: center;
@@ -210,23 +237,106 @@ main .main-pied .main-pied2 .main-pied22 {
   background: url(../img/pic03.jpg);
 }
 main .main-pied .main-pied2 .main-pied23 {
-  padding: 10px 40px;
+  padding: 10px 45px;
 }
 main .main-pied .main-pied2 .main-pied23 p {
   font-size: 1.2rem;
 }
 main .main-pied .main-pied2 .main-pied24 {
+  margin-top: auto;
   text-align: center;
 }
 main .main-pied .main-pied2 .main-pied24 button {
-  margin: 40px;
+  margin: 0;
   padding: 10px 20px;
   background: none;
 }
 
 footer {
   margin-top: 20px;
-  background: gray;
+  background: rgb(216, 210, 210);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer .footer1 {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border: 1px solid rgb(126, 121, 121);
+}
+footer .footer1 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+footer .footer1 form label {
+  display: block;
+}
+footer .footer1 form input {
+  background: none;
+  width: 130%;
+  padding: 10px;
+  border-radius: 6px;
+}
+footer .footer1 form textarea {
+  background: none;
+  width: 100%;
+  padding: 80px 50px;
+  border-radius: 6px;
+  resize: none;
+}
+footer .footer1 form button {
+  background: none;
+  padding: 10px 40px;
+  border-radius: 6px;
+}
+footer .footer2 {
+  padding: 40px 0;
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  border: 1px solid rgb(126, 121, 121);
+}
+footer .footer2 div {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  border-bottom: 1px solid rgb(126, 121, 121);
+}
+footer .footer2 div h4 {
+  margin: 0;
+  font-weight: bold;
+}
+footer .footer2 div p {
+  margin: 0;
+}
+footer .footer2 .footer22 {
+  padding: 40px 0;
+  border-top: 1px solid rgb(126, 121, 121);
+}
+footer .footer2 .footer23 {
+  padding: 40px 0;
+  border-top: 1px solid rgb(126, 121, 121);
+}
+footer .footer2 .footer24 {
+  padding: 40px 0;
+  border-top: 1px solid rgb(126, 121, 121);
+  border-bottom: 1px solid rgb(126, 121, 121);
+}
+footer .footer2 .footer24 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
