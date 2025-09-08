@@ -183,15 +183,17 @@ main .main-pied .main-pied1 .main-pied12 {
   width: 80%;
   background: url(../img/pic02.jpg);
 }
+main .main-pied .main-pied1 .main-pied13 {
+  padding: 10px 40px;
+}
 main .main-pied .main-pied1 .main-pied13 p {
-  margin: 20px 50px;
   font-size: 1.2rem;
 }
 main .main-pied .main-pied1 .main-pied14 {
   text-align: center;
 }
 main .main-pied .main-pied1 .main-pied14 button {
-  margin: 40px 0;
+  margin: 40px;
   padding: 10px 20px;
   background: none;
 }
@@ -207,15 +209,17 @@ main .main-pied .main-pied2 .main-pied22 {
   width: 80%;
   background: url(../img/pic03.jpg);
 }
+main .main-pied .main-pied2 .main-pied23 {
+  padding: 10px 40px;
+}
 main .main-pied .main-pied2 .main-pied23 p {
-  margin: 20px 50px;
   font-size: 1.2rem;
 }
 main .main-pied .main-pied2 .main-pied24 {
   text-align: center;
 }
 main .main-pied .main-pied2 .main-pied24 button {
-  margin: 40px 0;
+  margin: 40px;
   padding: 10px 20px;
   background: none;
 }
