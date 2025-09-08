@@ -1,6 +1,7 @@
 
 $color1:white;
 $color2:black;
+$color3: gray;
 
 *{
     list-style: none;
@@ -63,13 +64,20 @@ header{
                 padding: 10px;
                 background: none;
                 border: none;
-                color: $color1;
-                font-size: 1rem;
                 transition: 0.2s;
+                a{
+                    color: $color1;
+                    font-size: 1rem;
+                }
+
+                
             }
             button:hover{
                     background: $color1;
-                    color: $color2 ;
+                    a{
+                        color: $color2 ;
+                    }
+                    
             }
         }
         .header-botton-2{
@@ -127,5 +135,96 @@ main{
                 padding: 20px;
             }
         }
+    }
+    .main-ventre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .main-ventre1{
+            height: 400px;
+            width: 70%;
+            background: url(../img/pic01.jpg)center/cover;
+            margin: 40px 0;
+        }
+        .main-ventre2{
+            padding: 20px 0;
+            button{
+                padding: 10px 20px;
+                background: none;
+                a{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    .main-pied{
+        display: flex;
+        flex-direction: row;
+        .main-pied1{
+            border: 0.5px solid $color2;
+            .main-pied11{
+                text-align: center;
+            }
+            .main-pied12{
+                margin: 0 auto;
+                height: 300px;
+                width: 80%;
+                background: url(../img/pic02.jpg);  
+            }
+            .main-pied13{
+                p{
+                    margin: 20px 50px;
+                    font-size: 1.2rem;
+                }
+            }
+            .main-pied14{
+                text-align: center;
+                button{
+                    margin: 40px 0;
+                    padding: 10px 20px;
+                    background: none;
+                }
+            }
+                
+            
+        }
+        .main-pied2{
+            border: 0.5px solid $color2;
+            .main-pied21{
+                text-align: center;
+            }
+            .main-pied22{
+                margin: 0 auto;
+                height: 300px;
+                width: 80%;
+                background: url(../img/pic03.jpg); 
+            }
+            .main-pied23{
+                p{
+                    margin: 20px 50px;
+                    font-size: 1.2rem;
+                }
+            }
+            .main-pied24{
+                text-align: center;
+                button{
+                    margin: 40px 0;
+                    padding: 10px 20px;
+                    background: none;
+                }
+            }
+        }
+    }
+}
+// footer
+footer{
+    margin-top: 20px;
+    background: $color3;
+    display: flex;
+    .footer1{
+
+    }
+    .footer2{
+        
     }
 }

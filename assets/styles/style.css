@@ -68,13 +68,17 @@ header .header-botton .header-botton-1 button {
   padding: 10px;
   background: none;
   border: none;
-  color: white;
-  font-size: 1rem;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
+header .header-botton .header-botton-1 button a {
+  color: white;
+  font-size: 1rem;
+}
 header .header-botton .header-botton-1 button:hover {
   background: white;
+}
+header .header-botton .header-botton-1 button:hover a {
   color: black;
 }
 header .header-botton .header-botton-2 nav ul {
@@ -129,4 +133,97 @@ main .main-top .main-top1 h2 {
   font-size: 3rem;
   text-transform: uppercase;
   padding: 20px;
+}
+main .main-ventre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .main-ventre .main-ventre1 {
+  height: 400px;
+  width: 70%;
+  background: url(../img/pic01.jpg) center/cover;
+  margin: 40px 0;
+}
+main .main-ventre .main-ventre2 {
+  padding: 20px 0;
+}
+main .main-ventre .main-ventre2 button {
+  padding: 10px 20px;
+  background: none;
+}
+main .main-ventre .main-ventre2 button a {
+  font-size: 1.2rem;
+}
+main .main-pied {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+main .main-pied .main-pied1 {
+  border: 0.5px solid black;
+}
+main .main-pied .main-pied1 .main-pied11 {
+  text-align: center;
+}
+main .main-pied .main-pied1 .main-pied12 {
+  margin: 0 auto;
+  height: 300px;
+  width: 80%;
+  background: url(../img/pic02.jpg);
+}
+main .main-pied .main-pied1 .main-pied13 p {
+  margin: 20px 50px;
+  font-size: 1.2rem;
+}
+main .main-pied .main-pied1 .main-pied14 {
+  text-align: center;
+}
+main .main-pied .main-pied1 .main-pied14 button {
+  margin: 40px 0;
+  padding: 10px 20px;
+  background: none;
+}
+main .main-pied .main-pied2 {
+  border: 0.5px solid black;
+}
+main .main-pied .main-pied2 .main-pied21 {
+  text-align: center;
+}
+main .main-pied .main-pied2 .main-pied22 {
+  margin: 0 auto;
+  height: 300px;
+  width: 80%;
+  background: url(../img/pic03.jpg);
+}
+main .main-pied .main-pied2 .main-pied23 p {
+  margin: 20px 50px;
+  font-size: 1.2rem;
+}
+main .main-pied .main-pied2 .main-pied24 {
+  text-align: center;
+}
+main .main-pied .main-pied2 .main-pied24 button {
+  margin: 40px 0;
+  padding: 10px 20px;
+  background: none;
+}
+
+footer {
+  margin-top: 20px;
+  background: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
