@@ -319,6 +319,7 @@ footer .footer1 form {
 }
 footer .footer1 form label {
   display: block;
+  margin: 20px 0;
 }
 footer .footer1 form input {
   background: none;
