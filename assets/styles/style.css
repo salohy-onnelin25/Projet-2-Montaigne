@@ -350,7 +350,6 @@ footer .footer2 {
   grid-template-rows: repeat(4, auto);
 }
 footer .footer2 div {
-  padding-top: 50px;
   display: grid;
   grid-template-columns: 30% 70%;
   -webkit-box-align: center;
@@ -473,5 +472,8 @@ footer .footer2 nav ul li a i:hover {
   }
   footer .footer2 {
     border-top: 5px solid rgb(126, 121, 121);
+  }
+  footer .footer2 div {
+    padding: 50px;
   }
 }/*# sourceMappingURL=style.css.map */

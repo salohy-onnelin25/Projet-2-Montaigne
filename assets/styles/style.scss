@@ -305,7 +305,6 @@ footer{
         display: grid;
         grid-template-rows: repeat(4, auto);
         div{
-            padding-top: 50px;
             display: grid;
             grid-template-columns: 30% 70%;
             align-items: center;
@@ -411,7 +410,10 @@ footer{
             }
         }
         .footer2{
-           border-top: 5px solid rgb(126, 121, 121); 
+           border-top: 5px solid rgb(126, 121, 121);
+           div{
+            padding: 50px;
+           } 
         }
     }
 }
