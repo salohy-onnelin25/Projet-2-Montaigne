@@ -150,6 +150,9 @@ main .main-top .main-top1 h2 {
   text-transform: uppercase;
   padding: 20px;
 }
+main .main-top .main-top1 .main-top1l2 {
+  font-style: italic;
+}
 main .main-ventre {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,9 +353,9 @@ footer .footer2 div {
   padding-top: 50px;
   display: grid;
   grid-template-columns: 30% 70%;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 1px solid rgb(126, 121, 121);
 }
 footer .footer2 div h4 {
@@ -370,9 +373,25 @@ footer .footer2 nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 20px;
+  gap: 10px;
   margin: 0;
   padding: 0;
+}
+footer .footer2 nav ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid black;
 }
 footer .footer2 nav ul li a i {
   font-size: 20px;

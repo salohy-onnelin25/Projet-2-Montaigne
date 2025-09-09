@@ -140,6 +140,9 @@ main{
                 text-transform:uppercase;
                 padding: 20px;
             }
+            .main-top1l2{
+                font-style: italic;
+            }
         }
     }
     .main-ventre{
@@ -305,7 +308,7 @@ footer{
             padding-top: 50px;
             display: grid;
             grid-template-columns: 30% 70%;
-            align-items: start;
+            align-items: center;
             border-bottom:1px solid rgb(126, 121, 121);
             h4{
                 margin: 0;
@@ -319,11 +322,19 @@ footer{
                     ul{
                         display: flex;
                         flex-direction: row;
-                        gap: 20px;
+                        gap: 10px;
                         margin: 0;
                         padding: 0;
                         li{
                            a{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background: transparent;
+                            border: 1px solid black;
                               i{
                                font-size: 20px;
                                color: $color2;
