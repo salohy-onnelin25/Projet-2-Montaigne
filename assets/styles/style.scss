@@ -21,9 +21,7 @@ li{
     user-select: none;
 }
 html{
-    background: url(../img/bg.jpg)center/cover fixed;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url(../img/bg.jpg)center/cover fixed no-repeat;
 }
 body{
     margin: 0 100px;
@@ -151,7 +149,7 @@ main{
         .main-ventre1{
             height: 400px;
             width: 70%;
-            background: url(../img/pic01.jpg)center/cover;
+            background: url(../img/pic01.jpg)center/cover fixed no-repeat;
             margin: 40px 0;
         }
         .main-ventre2{
@@ -191,9 +189,7 @@ main{
             .main-pied12{
                 height: 300px;
                 width: 100%;
-                background: url(../img/pic02.jpg);
-                background-repeat: no-repeat;
-                background-position: center;  
+                background: url(../img/pic02.jpg)center/cover fixed no-repeat;  
             }
             .main-pied13{
                 p{
@@ -230,9 +226,7 @@ main{
             .main-pied22{
                 height: 300px;
                 width: 100%;
-                background: url(../img/pic03.jpg);
-                background-repeat: no-repeat;
-                background-position: center;  
+                background: url(../img/pic03.jpg) center/cover fixed no-repeat;  
             }
             .main-pied23{
                 p{
@@ -347,6 +341,9 @@ footer{
     }
 // responsive......................................................
 @media (max-width:1006px){
+    body{
+        margin: 0;
+    }
     header{
         .header-top{
             .header-1{

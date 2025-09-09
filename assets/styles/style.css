@@ -30,9 +30,7 @@ li {
 }
 
 html {
-  background: url(../img/bg.jpg) center/cover fixed;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url(../img/bg.jpg) center/cover fixed no-repeat;
 }
 
 body {
@@ -167,7 +165,7 @@ main .main-ventre {
 main .main-ventre .main-ventre1 {
   height: 400px;
   width: 70%;
-  background: url(../img/pic01.jpg) center/cover;
+  background: url(../img/pic01.jpg) center/cover fixed no-repeat;
   margin: 40px 0;
 }
 main .main-ventre .main-ventre2 {
@@ -219,9 +217,7 @@ main .main-pied .main-pied1 .main-pied11 {
 main .main-pied .main-pied1 .main-pied12 {
   height: 300px;
   width: 100%;
-  background: url(../img/pic02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url(../img/pic02.jpg) center/cover fixed no-repeat;
 }
 main .main-pied .main-pied1 .main-pied13 p {
   font-size: 1.2rem;
@@ -266,9 +262,7 @@ main .main-pied .main-pied2 .main-pied21 {
 main .main-pied .main-pied2 .main-pied22 {
   height: 300px;
   width: 100%;
-  background: url(../img/pic03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url(../img/pic03.jpg) center/cover fixed no-repeat;
 }
 main .main-pied .main-pied2 .main-pied23 p {
   font-size: 1.2rem;
@@ -392,6 +386,9 @@ footer .footer2 nav ul li a i:hover {
 }
 
 @media (max-width: 1006px) {
+  body {
+    margin: 0;
+  }
   header .header-top .header-1 h1 {
     font-size: 3rem;
   }
