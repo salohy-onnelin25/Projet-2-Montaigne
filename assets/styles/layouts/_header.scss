@@ -1,15 +1,31 @@
 header{
+    position: relative;
+    min-height: 100vh;
     .header-top{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 0;
+        transform: translateY(40px);
+        animation: animheadertop 1.5s forwards;
+        @keyframes animheadertop{
+            to{
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
         .header-1{
             text-align: center;
             color: $color1;
             h1{
-                font-size: 5rem;
+                font-size: 4rem;
                 text-transform:uppercase;
+                margin: 0;
             }
         }
         .header-2{
-            margin:100px 0;
+            margin: 40px 0;
             nav{
                 ul{
                     text-align: center;
@@ -17,7 +33,7 @@ header{
                     li{
                         a{
                             i{
-                                font-size: 100px;
+                                font-size: 50px;
                                 color: $color1;
                                 transition: 0.2s;
                             }
@@ -31,12 +47,23 @@ header{
         }
     }
     .header-botton{
+        position: absolute;
+        bottom: 0;
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background: $color5;
         .header-botton-1{
             display: flex;
             gap: 5px;
+            &:hover button:not(:hover){
+                background: none;
+                a{
+                    color: $color1;
+                }
+            }
             button{
                 padding: 10px;
                 background: none;
@@ -46,15 +73,18 @@ header{
                     color: $color1;
                     font-size: 1rem;
                 }
-
-                
-            }
-            button:hover{
+                &:first-child{
+                    background: $color1;
+                    a{
+                        color: $color2;
+                    }
+                }
+                &:hover{
                     background: $color1;
                     a{
                         color: $color2 ;
                     }
-                    
+                }
             }
         }
         .header-botton-2{
