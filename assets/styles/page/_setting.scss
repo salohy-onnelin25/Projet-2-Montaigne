@@ -1,0 +1,41 @@
+$color1:white;
+$color2:black;
+$color3: rgb(216, 210, 210);
+$color4: rgb(126, 121, 121);
+
+*{
+    list-style: none;
+    box-sizing: border-box;
+}
+button{
+        cursor: pointer;
+        user-select: none;
+    }
+a{
+    text-decoration: none;
+    color: $color2;
+    user-select: none;
+}
+li{
+    cursor: pointer;
+    user-select: none;
+}
+html{
+    background: url(../img/bg.jpg)center/cover fixed no-repeat;
+}
+body{
+    margin: 0 100px;
+}
+.circle{
+    position: fixed;
+    right: 100px;
+    top: 90%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: url(../img/2b5c3c11-f7e4-470a-8f5c-bf86244483a5.png) no-repeat center;
+    background-size: cover;
+    border-radius: 50%;
+    z-index: 1000;
+    border: 2px solid $color3;
+}

@@ -1,0 +1,94 @@
+footer{
+    margin-top: 20px;
+    background: $color3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .footer1{
+        padding: 40px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-right: 1px solid $color4;
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            label{
+                display: block;
+                margin: 20px 0;
+            }
+            input{
+                background: none;
+                width: 100%;
+                padding: 10px;
+                border-radius: 6px;
+                
+            }
+            textarea{
+                background: none;
+                width: 100%;
+                padding: 80px 50px;
+                border-radius: 6px;
+                resize: none;
+            }
+            button{
+                background: none;
+                padding: 10px 40px;
+                border-radius: 6px;
+                transition: 0.2s;
+            }
+            button:hover{
+                    background: $color2;
+                    color: $color1;
+                }
+        }
+    }
+    .footer2{
+        padding: 0 40px;
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        div{
+            display: grid;
+            grid-template-columns: 30% 70%;
+            align-items: center;
+            border-bottom:1px solid $color4;
+            h4{
+                margin: 0;
+                font-weight: bold;
+            }
+            p{
+                margin: 0;
+            }
+        }
+                nav{
+                    ul{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 10px;
+                        margin: 0;
+                        padding: 0;
+                        li{
+                           a{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background: transparent;
+                            border: 1px solid ;
+                              i{
+                               font-size: 20px;
+                               color: $color2;
+                               transition: 0.2s; 
+                              }
+                              i:hover{
+                                transform: scale(1.3);
+                              }
+                            }
+                        }
+                    }
+                }
+        }
+        
+    }
